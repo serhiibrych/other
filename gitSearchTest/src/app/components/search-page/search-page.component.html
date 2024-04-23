@@ -1,0 +1,8 @@
+<app-searchwidget (textChange)="onSearchChange($event)"></app-searchwidget>
+<div class="container">
+    <div class="results" *ngFor="let result of searchResults |async">
+        <div class="result-card">
+            <app-repositorycard [repository]="result"></app-repositorycard>
+        </div>
+    </div>
+</div>
