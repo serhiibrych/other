@@ -3,21 +3,26 @@
     border-radius: 4px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 16px;
-}
 
-.card-title {
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 8px;
-}
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
 
-.card-description {
-    font-size: 14px;
-    color: #555555;
+    &__title {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 8px;
+    }
 
-    &.link {
-        color: #0366d6;
-        text-decoration: none;
-        cursor: pointer;
+    &__description {
+        font-size: 14px;
+        color: #555555;
+
+
+        &.link {
+            color: #0366d6;
+            text-decoration: none;
+            cursor: pointer;
+        }
     }
 }
